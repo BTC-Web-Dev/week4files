@@ -42,3 +42,32 @@ h2 {
 	bottom: 0;
 	width: 100%;
 }
+
+/* Styling for table. */
+table {
+    width: 60%; 
+    margin: 0 auto; 
+    background-color: #333; 
+    border-collapse: collapse; 
+}
+
+td, th {
+    color: white;
+    font-size: 1.3em;
+    padding: 10px;
+    text-align: left; 
+}
+
+td a {
+    color: white;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid white; 
+}
