@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>debian.sbs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        body {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+
+            height: 100vh;
+            overflow: hidden;
+        }
+        .terminal-container {
+            position: relative;
+            background: #282c34;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .title-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #333;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            color: #fff;
+        }
+        .title-bar .title {
+            flex-grow: 1;
+            font-size: 1.2em;
+            padding-left: 5%;
+          
+        }
+        .title-bar .buttons {
+            display: flex;
+            gap: 5px;
+        }
+        .title-bar .button {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .title-bar .button:hover {
+            background-color: #999;
+        }
+        .button.close {
+            background-color: #f44336;
+        }
+        .button.maximize {
+            background-color: #ff9800;
+        }
+        .button.minimize {
+            background-color: #4caf50;
+        }
+        pre {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            max-width: 100%;
+            overflow: auto;
+            margin: 0;
+            white-space: pre-wrap; 
+        }
+        .red-logo {
+            color: #ff0000; 
+        }
+        @media (max-width: 600px) {
+            pre {
+                font-size: 0.5em; 
+                padding-left: 5px;
+                width: 90%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="title-bar">
+            <div class="buttons">
+                <div class="button close"></div>
+                <div class="button maximize"></div>
+                <div class="button minimize"></div>
+            </div>
+            <div class="title">latka@li: ~</div>
+        </div>
+        <pre>
+<span class="red-logo">       _,met$$$$$gg.</span>          latka@li
+<span class="red-logo">    ,g$$$$$$$$$$$$$$$P.</span>       -----------
+<span class="red-logo">  ,g$$P"     """Y$$.".</span>        OS: Debian GNU/Linux 12 (bookworm) x86_64
+<span class="red-logo"> ,$$P'              `$$$.</span>     Email: contact@latka.li
+<span class="red-logo">',$$P       ,ggs.     `$$b:</span>   Kernel: 6.1.0-25-amd64
+<span class="red-logo">`d$$'     ,$P"'   .    $$$</span>    Uptime: 12 days, 1 hour, 19 mins
+<span class="red-logo"> $$P      d$'     ,    $$P</span>    Packages: 172 (dpkg)
+<span class="red-logo"> $$:      $$.   -    ,d$$'</span>    Shell: bash 5.2.15
+<span class="red-logo"> $$;      Y$b._   _,d$P'</span>      Resolution: 1920x1080
+<span class="red-logo"> Y$$.    `.`"Y$$$$P"'</span>         Terminal: lxterminal
+<span class="red-logo"> `$$b      "-.__</span>              CPU: Intel Xeon E3-1225 v3 (1) @ 3.600GHz
+<span class="red-logo">  `Y$$</span>                        GPU: Intel HD Graphics
+<span class="red-logo">   `Y$$.</span>                      Memory: 102MiB / 1024MiB
+<span class="red-logo">     `$$b.</span>
+<span class="red-logo">       `Y$$b.</span>
+<span class="red-logo">          `"Y$b._</span>
+<span class="red-logo">              `"""</span>
+    </pre>
+</body>
+</html>
